@@ -21,7 +21,7 @@
 ##  About <a name = "about"></a>
 
 This buildpack downloads and extracts the
-[wkhtmltopdf](https://wkhtmltopdf.org/) binaries and works on the `heroku-24` stacks only.
+[wkhtmltopdf](https://wkhtmltopdf.org/) binaries and works on the `heroku-24` stack only.
 
 - This buildpack downloads wkhtmltopdf v0.12.6.1-2 for the `heroku-24` stack.
 - This buildpack can bypass stack detection if the url to the wkhtmltopdf binary is provided through Aptfile.
