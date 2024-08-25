@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# bin/detect BUILD_DIR
+
+BUILD_DIR=$1
+
+if [ -f "$BUILD_DIR/Aptfile" ] || [ "$STACK" = "heroku-24" ]; then
+	echo "wkhtmltopdf"
+else
+	echo "ERROR: wkhtmltopdf was tested only to work only on heroku-24."
+	exit 1
+fi
